@@ -1,0 +1,19 @@
+/* Style global pour le centrage (Modèle statique) */
+body {
+    font-family: "Times New  Roman", serif;
+}
+
+table {
+  
+    border: 1px solid black;
+    border-collapse: separate; /* Pour garder l'espace entre les bordures */
+   
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+
+

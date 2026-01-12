@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Personnes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body onload="init()">
+
+<!-- Formulaire d'ajout -->
+<div id="form_container" class="form-box">
+  <label>Nom:</label>
+  <input type="text" id="form_nom">
+  <label>Prenom: </label>
+  <input type="text" id="form_prenom">
+  <label>Points: </label>
+  <input type="text" id="form_points">
+  <button class="btn-add" onclick="doNewData()">Ajouter</button>
+  <button class="btn-black" onclick="actualiser()">Actualiser</button>
+</div>
+
+<!-- Formulaire d'édition (caché par défaut) -->
+<div id="form_edit_container" class="form-box" hidden>
+  <label>id:</label>
+  <input type="text" id="form_edit_id" readonly>
+  <label>Nom: </label>
+  <input type="text" id="form_edit_nom">
+  <label>Prenom:</label>
+  <input type="text" id="form_edit_prenom">
+  <label>Points:</label>
+  <input type="text" id="form_edit_points">
+  <button class="btn-add" onclick="doEditData()">Edit</button>
+  <button class="btn-black" onclick="annulerEdit()">Annuler</button>
+</div>
+
+<!-- Tableau -->
+<table>
+  <thead>
+    <tr>
+      <th class="col_number">N°</th>
+      <th class="col_text">Nom</th>
+      <th class="col_text">Prénom</th>
+      <th class="col_points">Points</th>
+      <th class="col_chkbox">Select</th>
+      <th class="col_edit">Edit</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+  <tfoot>
+    <tr>
+      <td id="ligne_count" colspan="3" class="footer-left">0 ligne(s)</td>
+      <td id="total_points" colspan="2" class="footer-right">Total point(s)= 0</td>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- Boutons en bas - alignés à droite -->
+<div id="bottom_btns">
+  <button class="btn-console" onclick="consoleTableau()">Console Tableau</button>
+  <button class="btn-delete" onclick="deleteRow()">Supprimer</button>
+</div>
+
+</body>
+</html>

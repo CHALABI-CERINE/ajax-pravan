@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Données - Exo 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Contenu de Persons (Exo 1)</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in persons %}
+            <tr>
+                <td>{{ p.id }}</td>
+                <td>{{ p.nom }}</td>
+                <td>{{ p.prenom }}</td>
+                <td>{{ p.points }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    
+   
+
+</body>
+</html>

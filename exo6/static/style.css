@@ -1,0 +1,209 @@
+body { 
+  font-family:  Arial, sans-serif;
+  margin: 20px 40px;
+  background-color:  #f5f5f5;
+  color: #333;
+}
+
+/* Form box styling */
+.form-box {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  margin-bottom:  0;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Formulaire visible */
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Formulaire caché */
+.form-box[hidden] {
+  display: none ! important;
+}
+
+/* Form elements */
+label {
+  font-weight: normal;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 6px 8px;
+
+  border: 1px solid #ccc;
+  border-radius: 0;
+  min-width: 120px;
+  font-size:  14px;
+}
+
+#form_edit_id {
+  min-width: 80px;
+  background-color:  #fff;
+}
+
+/* Bouton Ajouter / Edit (vert) */
+.btn-add {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 7px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #4cae4c;
+}
+
+/* Bouton Noir (Actualiser / Annuler) */
+.btn-black {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 7px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  background-color: #000;
+}
+
+/* Table */
+table {
+  width:  100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding:  10px 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Header row */
+thead tr {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* Data rows */
+.row {
+  background-color:  #fff;
+}
+
+.row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Column widths and alignment */
+.col_number {
+  text-align: center;
+  width: 8%;
+}
+
+.col_text {
+  text-align: left;
+  width: 28%;
+}
+
+.col_points {
+  text-align: center;
+  width: 20%;
+}
+
+.col_chkbox {
+  text-align: center;
+  width: 6%;
+}
+
+.col_edit {
+  text-align: center;
+  width: 8%;
+}
+
+/* Footer */
+tfoot tr {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tfoot td {
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+/* Buttons general */
+button {
+  cursor: pointer;
+}
+
+/* Boutons en bas - alignés à droite */
+#bottom_btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+/* Console Tableau button (vert) */
+.btn-console {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-console:hover {
+  background-color: #4cae4c;
+}
+
+/* Supprimer button (rouge) */
+.btn-delete {
+  background-color: #e74c3c;
+  color:  white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* Edit button in table (gris) */
+.btn-edit {
+  background-color: #6c7a89;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color:  #5a6a79;
+}
